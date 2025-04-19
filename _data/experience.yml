@@ -8,7 +8,7 @@
     Provided solutions for over 1,000 developers to automate 
     SAST, DAST, SCA, and secret detection scanning in their GitLab CI/CD pipelines. 
     Performed threat assessments on projects utilizing multiple languages 
-    and frameworks. Took part in finding triage process for multiple projects and teams. 
+    and frameworks. Participated in the findings triage process across multiple projects and teams. 
     <br><br>
     Created data pipelines and a data lake 
     integrating data from GitLab, AWS, GCP, Azure, Backstage, Sourcegraph, 
@@ -36,27 +36,27 @@
     and deploying a software baseline to multiple operational sites. Duties 
     included mentoring a team of ~50 engineers in DevSecOps best practices while
     assisting in the refactoring efforts of all team code repositories. The 
-    refactoring effort was to improve security, usability, and maintainability
-    of the multiple large repositories.
+    refactoring effort aimed to improve the security, usability, and maintainability
+    of multiple large repositories.
     <br><br>
-    Implemented OS level hardening with Puppet module (Linux) and Powershell
+    Implemented OS-level hardening using Puppet modules (Linux) and PowerShell
     DSC scripts (Windows) to create an automated hardening policy 
     for all deployed systems. Implemented an Operating System pipeline using
     Packer. Incorporated all baselines created using the DevSecOps process into
-    a repo that utilized vagrant to quickly create development environments
+    a repository that utilized Vagrant to quickly create development environments
     for all of the services offered by the team.
     <br><br>
-    Led a large scale effort to add functional level testing to all services 
-    utilizing Robot Framework. Mentored team on best practices for regression
-    testing large system of systems installations and complex installation 
+    Led a large-scale effort to add functional-level testing to all services 
+    utilizing Robot Framework. Mentored the team on best practices for regression
+    testing large system-of-systems installations and complex installation 
     environments. Utilized the functional tests in the Jenkins pipeline
     for quick regression testing of all baseline updates.
     <br><br>
-    Related Skills: Python, Powershell, Powershell DSC, bash, Ruby, Robot 
+    Related Skills: Python, PowerShell, PowerShell DSC, Bash, Ruby, Robot 
     Framework, Active Directory, Puppet, Packer, Vagrant, Jenkins, Jira, 
     Confluence, BitBucket, mkdocs, MSSQL, MongoDB, Nessus, HBSS, WSUS, Windows 
-    Server 2012/2016/2019, RedHat 7/8, Virtual Box, VMWare Workstation, vSphere,
-    vagrant
+    Server 2012/2016/2019, RedHat 7/8, VirtualBox, VMWare Workstation, vSphere, 
+    Vagrant
 
 - company: Booz Allen Hamilton - Colorado Springs, CO
   positions:
@@ -64,21 +64,21 @@
       duration: June, 2015 &mdash; Oct, 2019
   summary: |
     Supported multiple Air Force clients by leading formal on-site cyber risk 
-    assessments. Mentored junior cyber analysts in how to perform site
+    assessments. Mentored junior cyber analysts on how to perform site
     assessments, DISA STIG assessments, and risk report generation. 
     <br><br>
     Designed, created, and maintained a multi-user NW.JS / VueJS application for 
     assisting in the creation of Cyber Risk Assessments by collecting, 
     correlating, and ranking data collected during site visits. The application
-    is currently being used to create hundreds of assessment reports each year 
+    continues to be used to generate hundreds of assessment reports each year 
     across the company.
     <br><br>
     Provided mentoring and development assistance to multiple junior team 
     members to improve deliveries across multiple contracts. Wrote multiple
-    gradle build scripts to provide consistency to multiple projects.
+    Gradle build scripts to provide consistency to multiple projects.
     <br><br>
-    Related Skills: NodeJS, NW.JS, VueJS, NuxtJS, PouchDB/CouchDB(noSQL), 
-    Nessus, HBSS, Vagrant, Gradle, NIST RMF, Virtual Box, vagrant
+    Related Skills: NodeJS, NW.JS, VueJS, NuxtJS, PouchDB/CouchDB (NoSQL), 
+    Nessus, HBSS, Vagrant, Gradle, NIST RMF, VirtualBox, Vagrant
 
 - company: Lockheed Martin - Colorado Springs, CO
   positions:
@@ -93,19 +93,19 @@
     multiple Air Force clients using agile processes. Designed, developed, 
     deployed, and maintained a collection of custom operating system and 
     application hardening solutions across multiple sites. Led all training for 
-    cyber related tasks across the contract to include software development, 
+    cyber-related tasks across the contract, including software development, 
     system hardening, cyber awareness, and system management.
     <br><br>
     Planned and led regular cyber evaluations across multiple sites and enclaves.
-    Created patch management process to provide latest Solaris and Windows
+    Created a patch management process to deliver the latest Solaris and Windows
     patches to meet accreditation deadlines. Created custom cyber assessment
     reports for delivery and presentation to large audiences on enclave
     cyber posture for over 20 DoD project accreditations.
     <br><br>
-    Designed and created custom solutions to meet constantly shifting 
-    requirements using a variety of software. The solutions were focused on 
-    automating system hardening and risk assessment for Solaris and Windows
-    systems.
+    Designed and developed custom solutions to meet evolving 
+    requirements using a variety of tools and technologies. The solutions 
+    focused on automating system hardening and risk assessment for Solaris and 
+    Windows systems.
     <br><br>
     Related Skills: VBScript, Bash, Perl, PHP, MySQL, Java, Oracle DB, Access, 
     DokuWiki, McAfee Suite, Symantec Suite, Nessus, iRetina, Gold Disk, ESXi,
