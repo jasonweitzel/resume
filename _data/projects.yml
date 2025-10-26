@@ -7,6 +7,10 @@
     competitions in Colorado Springs, CO and Rome, NY. Regularly travel to 
     attend DEFCON conference in Las Vegas and participated on Booz Allen team
     for the DEFCON pre-qualifiers.
-    <br><br>
-    Related Skills: Kali Linux, Crypto, Steganography, Web Pen Testing, 
-    Reverse Engineering, Digital Forensics
+  related_skills:
+    - Kali Linux
+    - Crypto
+    - Steganography
+    - Web Pen Testing
+    - Reverse Engineering
+    - Digital Forensics

@@ -21,11 +21,26 @@
     teams to foster best practices and secure coding. Developed multiple 
     projects to provide automated solutions in Python. Hosted weekly code 
     jam sessions to promote strong team synergy. 
-    <br><br> 
-    Related Skills: GitLab CI/CD, SAST, DAST, SCA, Secret Detection, 
-    Threat Assessment, Data Pipelines, Data Lake, Grafana, Python, 
-    AWS, GCP, Azure, Backstage, Sourcegraph, Mentoring, Team Leadership, 
-    Secure Coding, Automation
+  related_skills:
+    - GitLab CI/CD
+    - SAST
+    - DAST
+    - SCA
+    - Secret Detection
+    - Threat Assessment
+    - Data Pipelines
+    - Data Lake
+    - Grafana
+    - Python
+    - AWS
+    - GCP
+    - Azure
+    - Backstage
+    - Sourcegraph
+    - Mentoring
+    - Team Leadership
+    - Secure Coding
+    - Automation
 
 - company: Booz Allen Hamilton - Rome, NY
   positions:
@@ -51,12 +66,32 @@
     testing large system-of-systems installations and complex installation 
     environments. Utilized the functional tests in the Jenkins pipeline
     for quick regression testing of all baseline updates.
-    <br><br>
-    Related Skills: Python, PowerShell, PowerShell DSC, Bash, Ruby, Robot 
-    Framework, Active Directory, Puppet, Packer, Vagrant, Jenkins, Jira, 
-    Confluence, BitBucket, mkdocs, MSSQL, MongoDB, Nessus, HBSS, WSUS, Windows 
-    Server 2012/2016/2019, RedHat 7/8, VirtualBox, VMWare Workstation, vSphere, 
-    Vagrant
+  related_skills:
+    - Python
+    - PowerShell
+    - PowerShell DSC
+    - Bash
+    - Ruby
+    - Robot Framework
+    - Active Directory
+    - Puppet
+    - Packer
+    - Vagrant
+    - Jenkins
+    - Jira
+    - Confluence
+    - BitBucket
+    - mkdocs
+    - MSSQL
+    - MongoDB
+    - Nessus
+    - HBSS
+    - WSUS
+    - Windows Server 2012/2016/2019
+    - RedHat 7/8
+    - VirtualBox
+    - VMWare Workstation
+    - vSphere
 
 - company: Booz Allen Hamilton - Colorado Springs, CO
   positions:
@@ -76,9 +111,18 @@
     Provided mentoring and development assistance to multiple junior team 
     members to improve deliveries across multiple contracts. Wrote multiple
     Gradle build scripts to provide consistency to multiple projects.
-    <br><br>
-    Related Skills: NodeJS, NW.JS, VueJS, NuxtJS, PouchDB/CouchDB (NoSQL), 
-    Nessus, HBSS, Vagrant, Gradle, NIST RMF, VirtualBox, Vagrant
+  related_skills:
+    - NodeJS
+    - NW.JS
+    - VueJS
+    - NuxtJS
+    - PouchDB/CouchDB (NoSQL)
+    - Nessus
+    - HBSS
+    - Vagrant
+    - Gradle
+    - NIST RMF
+    - VirtualBox
 
 - company: Lockheed Martin - Colorado Springs, CO
   positions:
@@ -106,7 +150,20 @@
     requirements using a variety of tools and technologies. The solutions 
     focused on automating system hardening and risk assessment for Solaris and 
     Windows systems.
-    <br><br>
-    Related Skills: VBScript, Bash, Perl, PHP, MySQL, Java, Oracle DB, Access, 
-    DokuWiki, McAfee Suite, Symantec Suite, Nessus, iRetina, Gold Disk, ESXi,
-    VMWare vSphere
+  related_skills:
+    - VBScript
+    - Bash
+    - Perl
+    - PHP
+    - MySQL
+    - Java
+    - Oracle DB
+    - Access
+    - DokuWiki
+    - McAfee Suite
+    - Symantec Suite
+    - Nessus
+    - iRetina
+    - Gold Disk
+    - ESXi
+    - VMWare vSphere

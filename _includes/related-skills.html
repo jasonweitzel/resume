@@ -1,0 +1,11 @@
+{% assign skills = include.skills %}
+{% if skills %}
+<div class="related-skills">
+  <span class="related-skills__label">{{ include.title | default: 'Related Skills' }}</span>
+  <ul class="related-skills__list">
+    {% for skill in skills %}
+      <li class="related-skills__item">{{ skill }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
