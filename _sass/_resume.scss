@@ -146,12 +146,39 @@
 
   .resume-item { margin-bottom: 2rem; }
 
+  .resume-company-header {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    margin-bottom: 1.5rem;
+
+    @include media_larger_than_mobile {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+
   .resume-item-title {
     @include sans_bold;
     margin: 0 0 .75rem;
     font-size: 1.5rem;
     letter-spacing: -.05rem;
     line-height: 1;
+  }
+
+  .resume-company-dates {
+    @include sans;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    white-space: normal;
+
+    @include media_larger_than_mobile {
+      text-align: right;
+      margin-left: 1.5rem;
+      white-space: nowrap;
+    }
   }
 
   .resume-item-details {
@@ -161,6 +188,54 @@
 
     &.award-title {
       font-size: 1rem;
+    }
+  }
+
+  .resume-position {
+    margin-bottom: 1.5rem;
+  }
+
+  .resume-position-header {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+
+    @include media_larger_than_mobile {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
+
+  .resume-position-title {
+    flex: 1;
+
+    h4 {
+      margin: 0;
+    }
+  }
+
+  .resume-position-dates {
+    @include sans;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #555;
+    white-space: nowrap;
+
+    @include media_larger_than_mobile {
+      text-align: right;
+      margin-left: 1.5rem;
+    }
+  }
+
+  .resume-position-highlights {
+    margin: .5rem 0 0 1.25rem;
+    padding: 0;
+    list-style: disc;
+
+    li {
+      margin-bottom: .4rem;
+      line-height: 1.5;
     }
   }
 
@@ -285,12 +360,40 @@
     margin: 0 0 1rem;
     .resume-item {
       margin-bottom: 1rem;
-      page-break-after: avoid;
+      padding-top: 0;
+    }
+    .resume-position {
+      margin-bottom: .75rem;
       page-break-inside: avoid;
       break-inside: avoid;
       -webkit-column-break-inside: avoid;
       -moz-column-break-inside: avoid;
-      padding-top: 0;
+      page-break-after: avoid;
+    }
+    .resume-position + .resume-position {
+      padding-top: .35in;
+      margin-top: -.35in;
+    }
+    .resume-position-header {
+      flex-direction: row;
+      align-items: baseline;
+    }
+    .resume-position-dates {
+      font-size: 11px;
+    }
+    .resume-position-highlights {
+      margin: .25rem 0 0 1rem;
+
+      li {
+        margin-bottom: .2rem;
+      }
+    }
+    .resume-company-header {
+      flex-direction: row;
+      align-items: baseline;
+    }
+    .resume-company-dates {
+      font-size: 11px;
     }
     .resume-item-title {
       font-size: 16px;
@@ -310,5 +413,6 @@
   }
   .resume-item + .resume-item {
     padding-top: .35in;
+    margin-top: -.35in;
   }
 }

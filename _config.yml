@@ -54,6 +54,7 @@ resume_print_social_links:       true
 
 # Design settings
 resume_theme:                   default
+resume_today:                   2025-10-26
 
 # Note: when editing locally, remember to restart
 # your Jekyll server when you edit this file. Changes

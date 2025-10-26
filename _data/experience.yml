@@ -1,169 +1,99 @@
-- company: HEB - San Antonio, TX
+- company: H-E-B
+  location: San Antonio, TX
+  start: Nov 2021
+  start_date: 2021-11-01
+  end: Present
+  end_date:
   positions:
-    - position: Principal Application Security Engineer
-      duration: June, 2023 &mdash; Present
-    - position: Lead Application Security Engineer
-      duration: Nov, 2021 &mdash; June, 2023
-  summary: |
-    Provided solutions for over 1,000 developers to automate 
-    SAST, DAST, SCA, and secret detection scanning in their GitLab CI/CD pipelines. 
-    Performed threat assessments on projects utilizing multiple languages 
-    and frameworks. Participated in the findings triage process across multiple projects and teams. 
-    <br><br>
-    Created data pipelines and a data lake 
-    integrating data from GitLab, AWS, GCP, Azure, Backstage, Sourcegraph, 
-    and other sources. Developed Grafana dashboards using the data lake 
-    to offer developers personalized insights into their data, security 
-    practices, and other metrics, along with actionable next steps to 
-    address identified issues.
-    <br><br>
-    Mentored developers across various 
-    teams to foster best practices and secure coding. Developed multiple 
-    projects to provide automated solutions in Python. Hosted weekly code 
-    jam sessions to promote strong team synergy. 
-  related_skills:
-    - GitLab CI/CD
-    - SAST
-    - DAST
-    - SCA
-    - Secret Detection
-    - Threat Assessment
-    - Data Pipelines
-    - Data Lake
-    - Grafana
-    - Python
-    - AWS
-    - GCP
-    - Azure
-    - Backstage
-    - Sourcegraph
-    - Mentoring
-    - Team Leadership
-    - Secure Coding
-    - Automation
+    - title: Principal Application Security Engineer
+      location: San Antonio, TX
+      start: Jun 2023
+      start_date: 2023-06-01
+      end: Present
+      end_date:
+      highlights:
+        - Drove org-wide adoption of **SAST/SCA/Secret** scanning from 10% to 100% in GitLab CI; cut false positives by ~85% and overall noise by ~98% with reachability analysis, automated validation, and **EPSS**-weighted prioritization.
+        - Built incident-ready data pipelines and dashboards unifying **GitLab**, scanners, and cloud telemetry; enabled **same-day** triage and traced malicious package installs during complex package registry compromise.
+        - Created **reusable security patterns** and **Terraform** modules for paved-road deployments; established OIDC-based CI-to-cloud auth for direct GitLab releases.
+        - Reduced SAST/IaC time-to-fix from 6+ months to ~1 week; maintained **Renovate** to drive weekly CVE-based dependency updates on supported projects.
+        - Led secret-hygiene campaigns across ~14k repos, shrinking static-secret usage from ~750 to <100 repos; mentored ~2k developers via weekly code jams and design consults.
 
-- company: Booz Allen Hamilton - Rome, NY
-  positions:
-    - position: Solutions Architect
-      duration: Oct, 2019 &mdash; Nov, 2021
-  summary: |
-    Supported Air Force client in researching, developing, securing, 
-    and deploying a software baseline to multiple operational sites. Duties 
-    included mentoring a team of ~50 engineers in DevSecOps best practices while
-    assisting in the refactoring efforts of all team code repositories. The 
-    refactoring effort aimed to improve the security, usability, and maintainability
-    of multiple large repositories.
-    <br><br>
-    Implemented OS-level hardening using Puppet modules (Linux) and PowerShell
-    DSC scripts (Windows) to create an automated hardening policy 
-    for all deployed systems. Implemented an Operating System pipeline using
-    Packer. Incorporated all baselines created using the DevSecOps process into
-    a repository that utilized Vagrant to quickly create development environments
-    for all of the services offered by the team.
-    <br><br>
-    Led a large-scale effort to add functional-level testing to all services 
-    utilizing Robot Framework. Mentored the team on best practices for regression
-    testing large system-of-systems installations and complex installation 
-    environments. Utilized the functional tests in the Jenkins pipeline
-    for quick regression testing of all baseline updates.
-  related_skills:
-    - Python
-    - PowerShell
-    - PowerShell DSC
-    - Bash
-    - Ruby
-    - Robot Framework
-    - Active Directory
-    - Puppet
-    - Packer
-    - Vagrant
-    - Jenkins
-    - Jira
-    - Confluence
-    - BitBucket
-    - mkdocs
-    - MSSQL
-    - MongoDB
-    - Nessus
-    - HBSS
-    - WSUS
-    - Windows Server 2012/2016/2019
-    - RedHat 7/8
-    - VirtualBox
-    - VMWare Workstation
-    - vSphere
+    - title: Lead Application Security Engineer
+      location: San Antonio, TX
+      start: Nov 2021
+      start_date: 2021-11-01
+      end: Jun 2023
+      end_date: 2023-06-01
+      highlights:
+        - Standardized **SAST/DAST/SCA** pipelines across ~11k to ~15k repos spanning **AWS**, **GCP**, **Azure**, on-prem, and **Kubernetes**.
+        - Engineered a security data lake blending **GitLab** events, scanner output, and cloud artifacts; delivered **Grafana** dashboards that drove executive prioritization and remediation planning.
+        - Implemented automation with **Python** and **Backstage** to accelerate guardrail rollout and reduce manual remediation toil.
 
-- company: Booz Allen Hamilton - Colorado Springs, CO
+- company: Booz Allen Hamilton
+  location: Rome, NY | Colorado Springs, CO
+  start: Jun 2015
+  start_date: 2015-06-01
+  end: Nov 2021
+  end_date: 2021-11-01
   positions:
-    - position: Cyber Threat Analyst / Software Engineer
-      duration: June, 2015 &mdash; Oct, 2019
-  summary: |
-    Supported multiple Air Force clients by leading formal on-site cyber risk 
-    assessments. Mentored junior cyber analysts on how to perform site
-    assessments, DISA STIG assessments, and risk report generation. 
-    <br><br>
-    Designed, created, and maintained a multi-user NW.JS / VueJS application for 
-    assisting in the creation of Cyber Risk Assessments by collecting, 
-    correlating, and ranking data collected during site visits. The application
-    continues to be used to generate hundreds of assessment reports each year 
-    across the company.
-    <br><br>
-    Provided mentoring and development assistance to multiple junior team 
-    members to improve deliveries across multiple contracts. Wrote multiple
-    Gradle build scripts to provide consistency to multiple projects.
-  related_skills:
-    - NodeJS
-    - NW.JS
-    - VueJS
-    - NuxtJS
-    - PouchDB/CouchDB (NoSQL)
-    - Nessus
-    - HBSS
-    - Vagrant
-    - Gradle
-    - NIST RMF
-    - VirtualBox
+    - title: Solutions Architect (DevSecOps)
+      location: Rome, NY
+      start: Oct 2019
+      start_date: 2019-10-01
+      end: Nov 2021
+      end_date: 2021-11-01
+      highlights:
+        - Took a legacy monorepo (~100 components) from near-zero automation to standardized CI/CD (**Jenkins**) with built-in **CIS/DISA** checks and functional tests.
+        - Enforced 100% code flow through CI/CD and code review; raised automated test coverage to ~60% by authoring **Robot Framework** libraries and integration/E2E test patterns.
+        - Dockerized legacy apps and produced **Windows (EXE)** and **Linux (RPM)** installers to enable portable multi-component deployments for a ~50-engineer program.
 
-- company: Lockheed Martin - Colorado Springs, CO
+    - title: Cyber Threat Analyst / Software Engineer
+      location: Colorado Springs, CO
+      start: Jun 2015
+      start_date: 2015-06-01
+      end: Oct 2019
+      end_date: 2019-10-01
+      highlights:
+        - Led on-site threat analyses validating contractor posture against **RMF** controls using manual techniques plus custom automation.
+        - Built and scaled a multi-user **NW.js/Vue.js/PouchDB** assessment app; cut assessment cycles from 4–6 weeks to 1–2 weeks with concurrent analyst workflows and evidence traceability.
+        - Created repeatable IaC environments (**Vagrant**) and migrated a Java codebase from **Ant to Gradle**, stabilizing builds and improving delivery.
+
+- company: Lockheed Martin (IS&GS / ISC2)
+  location: Colorado Springs, CO
+  start: May 2007
+  start_date: 2007-05-01
+  end: Jan 2015
+  end_date: 2015-01-01
   positions:
-    - position: Senior Information Assurance Engineer
-      duration: 2011 &mdash; 2015
-    - position: Information Assurance Engineer
-      duration: 2008 &mdash; 2011
-    - position: Information Assurance Engineer Associate
-      duration: 2007 &mdash; 2008
-  summary: |
-    Supported and led multiple cyber teams of up to 30 team members supporting 
-    multiple Air Force clients using agile processes. Designed, developed, 
-    deployed, and maintained a collection of custom operating system and 
-    application hardening solutions across multiple sites. Led all training for 
-    cyber-related tasks across the contract, including software development, 
-    system hardening, cyber awareness, and system management.
-    <br><br>
-    Planned and led regular cyber evaluations across multiple sites and enclaves.
-    Created a patch management process to deliver the latest Solaris and Windows
-    patches to meet accreditation deadlines. Created custom cyber assessment
-    reports for delivery and presentation to large audiences on enclave
-    cyber posture for over 20 DoD project accreditations.
-    <br><br>
-    Designed and developed custom solutions to meet evolving 
-    requirements using a variety of tools and technologies. The solutions 
-    focused on automating system hardening and risk assessment for Solaris and 
-    Windows systems.
-  related_skills:
-    - VBScript
-    - Bash
-    - Perl
-    - PHP
-    - MySQL
-    - Java
-    - Oracle DB
-    - Access
-    - DokuWiki
-    - McAfee Suite
-    - Symantec Suite
-    - Nessus
-    - iRetina
-    - Gold Disk
-    - ESXi
-    - VMWare vSphere
+    - title: Senior Information Assurance Engineer (Tech Lead)
+      location: Colorado Springs, CO
+      start: Sep 2011
+      start_date: 2011-09-01
+      end: Jan 2015
+      end_date: 2015-01-01
+      highlights:
+        - Led ~30 specialists across ~20 missions and 10+ contracts at ~6 sites, coordinating agile tasking and staffing for multi-site cyber operations.
+        - Delivered custom hardening and introduced a **GPO** management process that let developers work under strict lockdowns while maintaining compliance.
+        - Built an automated **STIG** evidence tool that improved validation and reporting efficiency by ~80%; managed **TCNO** vulnerability reporting during the **DIACAP to RMF** transition.
+
+    - title: Information Assurance Engineer
+      location: Colorado Springs, CO
+      start: May 2008
+      start_date: 2008-05-01
+      end: Sep 2011
+      end_date: 2011-09-01
+      highlights:
+        - Managed recurring enclave evaluations across ~4 sites, delivering POA&Ms and leadership briefings while driving closure of all High/Medium findings each cycle.
+        - Re-engineered hotfix workflows to cut patch time by 50%+ and created layered configuration suites that lifted **DISA STIG** compliance without blocking mission software.
+        - Authored SOPs and training (**DokuWiki** plus slide decks) to standardize evidence capture and accelerate onboarding under **DIACAP**.
+
+    - title: Information Assurance Engineer Associate
+      location: Colorado Springs, CO
+      start: May 2007
+      start_date: 2007-05-01
+      end: May 2008
+      end_date: 2008-05-01
+      highlights:
+        - Built a **PHP/MySQL** app (later **MSSQL**) that auto-generated **POA&Ms** and templated mitigations, cutting writing time by ~75% and reducing assessment effort to ~25% of baseline.
+        - Re-architected OS hardening into a definition-driven engine (**VBScript/Perl/shell**), eliminating duplicated scripts and speeding baseline creation across missions.
+        - Supported ~5 missions across 3 contracts and ~4 sites during the **DITSCAP to DIACAP** transition with a core team of 4 engineers.

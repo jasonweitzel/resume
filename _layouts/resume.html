@@ -71,12 +71,106 @@
 
         {% for job in site.data.experience %}
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          {% assign first_position = job.positions | first %}
+          {% assign last_position = job.positions | last %}
+          {% assign job_start_label = job.start | default: first_position.start | default: '<month> <year>' %}
+          {% assign job_end_label = job.end | default: last_position.end | default: 'Present' %}
+          {% assign job_end_label_lower = job_end_label | downcase %}
+          {% assign job_start_date_value = job.start_date | default: first_position.start_date %}
+          {% assign job_end_date_value = job.end_date %}
+          {% if job_end_date_value == nil or job_end_date_value == '' %}
+            {% if job_end_label_lower == 'present' %}
+              {% assign job_end_date_value = site.time %}
+            {% else %}
+              {% assign job_end_date_value = last_position.end_date %}
+            {% endif %}
+          {% endif %}
+          {% if job_end_date_value == nil %}
+            {% assign job_end_date_value = '' %}
+          {% endif %}
+          {% assign company_duration = '' %}
+          {% if job_start_date_value and job_start_date_value != '' %}
+            {% unless job_start_date_value contains '<' %}
+              {% if job_end_date_value and job_end_date_value != '' %}
+                {% unless job_end_date_value contains '<' %}
+                  {% assign start_year = job_start_date_value | date: '%Y' | plus: 0 %}
+                  {% assign start_month = job_start_date_value | date: '%m' | plus: 0 %}
+                  {% assign end_year = job_end_date_value | date: '%Y' | plus: 0 %}
+                  {% assign end_month = job_end_date_value | date: '%m' | plus: 0 %}
+                  {% assign months_total = end_year | minus: start_year %}
+                  {% assign months_total = months_total | times: 12 %}
+                  {% assign months_total = months_total | plus: end_month %}
+                  {% assign months_total = months_total | minus: start_month %}
+                  {% if months_total < 0 %}
+                    {% assign months_total = 0 %}
+                  {% endif %}
+                  {% assign years_part = months_total | divided_by: 12 %}
+                  {% assign months_part = months_total | modulo: 12 %}
+                  {% assign duration_parts = '' %}
+                  {% if years_part > 0 %}
+                    {% assign year_label = 'yrs' %}
+                    {% if years_part == 1 %}
+                      {% assign year_label = 'yr' %}
+                    {% endif %}
+                    {% assign duration_parts = years_part | append: ' ' | append: year_label %}
+                  {% endif %}
+                  {% if months_part > 0 %}
+                    {% assign month_label = 'mos' %}
+                    {% if months_part == 1 %}
+                      {% assign month_label = 'mo' %}
+                    {% endif %}
+                    {% if duration_parts != '' %}
+                      {% assign duration_parts = duration_parts | append: ' ' %}
+                    {% endif %}
+                    {% assign duration_parts = duration_parts | append: months_part | append: ' ' | append: month_label %}
+                  {% endif %}
+                  {% if duration_parts == '' %}
+                    {% assign duration_parts = '0 mos' %}
+                  {% endif %}
+                  {% assign company_duration = duration_parts %}
+                {% endunless %}
+              {% endif %}
+            {% endunless %}
+          {% endif %}
+          {% assign company_range = job_start_label | append: ' &ndash; ' | append: job_end_label %}
+          {% if company_duration != '' %}
+            {% assign company_range = company_range | append: ' (' | append: company_duration | append: ')' %}
+          {% endif %}
+          <div class="resume-company-header">
+            <h3 class="resume-item-title" itemprop="name">
+              {{ job.company }}{% if job.location %} | {{ job.location }}{% endif %}
+            </h3>
+            <div class="resume-company-dates">
+              {{ company_range }}
+            </div>
+          </div>
           {% for position in job.positions %}
-            <h4 class="resume-item-details" itemprop="description">{{ position.position }} &bull; {{ position.duration }}</h4>
+          {% assign start_label = position.start | default: '<month> <year>' %}
+          {% assign end_label = position.end | default: 'Present' %}
+          {% if end_label == '' %}
+            {% assign end_label = 'Present' %}
+          {% endif %}
+          <div class="resume-position">
+            <div class="resume-position-header">
+              <div class="resume-position-title">
+                <h4 class="resume-item-details" itemprop="description">
+                  {{ position.title }}{% if position.location %} | {{ position.location }}{% endif %}
+                </h4>
+              </div>
+              <div class="resume-position-dates">
+                {{ start_label | escape }} &ndash; {{ end_label | escape }}
+              </div>
+            </div>
+            {% if position.highlights %}
+            <ul class="resume-position-highlights">
+              {% for highlight in position.highlights %}
+              {% capture highlight_html %}{{ highlight | markdownify | strip_newlines }}{% endcapture %}
+              <li>{{ highlight_html | replace: '<p>', '' | replace: '</p>', '' | strip }}</li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
           {% endfor %}
-          <p class="resume-item-copy">{{ job.summary }}</p>
-          {% include related-skills.html skills=job.related_skills %}
         </div><!-- end of resume-item -->
         {% endfor %}
 
