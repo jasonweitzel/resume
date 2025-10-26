@@ -1,6 +1,15 @@
 // Resume styles
 // ---------------------------------------/
 
+.resume-wrapper {
+  max-width: 1000px;
+  padding: 0 20px;
+
+  @include media_larger_than_mobile {
+    padding: 0 32px;
+  }
+}
+
 // util
 
 .section-header {
@@ -243,7 +252,16 @@
 
 .print-only { display: none !important }
 
+@page {
+  margin: .5in;
+}
+
 @media print {
+  .resume-wrapper {
+    max-width: none;
+    padding: .45in .5in;
+  }
+
   .pagebreak {
     page-break-after: always;
     padding-bottom: 50px
@@ -265,7 +283,15 @@
   }
   .content-section {
     margin: 0 0 1rem;
-    .resume-item { margin-bottom: 1rem; }
+    .resume-item {
+      margin-bottom: 1rem;
+      page-break-after: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      -moz-column-break-inside: avoid;
+      padding-top: 0;
+    }
     .resume-item-title {
       font-size: 16px;
       line-height: .7em;
@@ -281,5 +307,8 @@
         font-size: 11px;
       }
     }
+  }
+  .resume-item + .resume-item {
+    padding-top: .35in;
   }
 }
