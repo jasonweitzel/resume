@@ -12,12 +12,10 @@
       end: Present
       end_date:
       highlights:
-        - Drove org-wide adoption of **SAST/SCA/Secret** scanning from 10% to 100% in GitLab CI; cut false positives by ~85% and overall noise by ~98% with reachability analysis, automated validation, and **EPSS**-weighted prioritization.
-        - Built incident-ready data pipelines and dashboards unifying **GitLab**, scanners, and cloud telemetry; enabled **same-day** triage and traced malicious package installs during complex package registry compromise.
-        - Created **reusable security patterns** and **Terraform** modules for paved-road deployments; established OIDC-based CI-to-cloud auth for direct GitLab releases.
-        - Reduced SAST/IaC time-to-fix from 6+ months to ~1 week; maintained **Renovate** to drive weekly CVE-based dependency updates on supported projects.
-        - Led secret-hygiene campaigns across ~14k repos, shrinking static-secret usage from ~750 to <100 repos; mentored ~2k developers via weekly code jams and design consults.
-
+        - Drove org-wide adoption of SAST/SCA/Secret scanning from <10% to 100% in GitLab CI while cutting false positives by ~85% and overall noise by ~98% through reachability analysis, automated validation, and EPSS-weighted prioritization.
+        - Reduced SCA findings time-to-fix from 6+ months to ~1 week by maintaining and recommending Renovate for weekly CVE-driven dependency updates on hundreds of projects.
+        - Mentored ~2k developers via weekly code jams, office hours, and design consults (authn, secret management, inter-service comms).
+        - Assisted in company-wide engineering discussions as part of the principal organization, providing technical guidance and leadership.
     - title: Lead Application Security Engineer
       location: San Antonio, TX
       start: Nov 2021
@@ -25,9 +23,10 @@
       end: Jun 2023
       end_date: 2023-06-01
       highlights:
-        - Standardized **SAST/DAST/SCA** pipelines across ~11k to ~15k repos spanning **AWS**, **GCP**, **Azure**, on-prem, and **Kubernetes**.
-        - Engineered a security data lake blending **GitLab** events, scanner output, and cloud artifacts; delivered **Grafana** dashboards that drove executive prioritization and remediation planning.
-        - Implemented automation with **Python** and **Backstage** to accelerate guardrail rollout and reduce manual remediation toil.
+        - Standardized SAST/DAST/SCA pipelines across a portfolio growing from ~11k to ~14k repos spanning hybrid and multi-cloud (AWS, GCP, Azure, on-prem/K8s).
+        - Engineered a security data lake (data ingestion and storage) integrating GitLab events, security scanner output, cloud artifacts, and multiple SaaS APIs.
+        - Delivered multiple connected Grafana dashboards that supported all development teams in planning and executive prioritization.
+        - Implemented automation in Python to accelerate remediation of application security concerns.
 
 - company: Booz Allen Hamilton
   location: Rome, NY | Colorado Springs, CO
@@ -43,10 +42,10 @@
       end: Nov 2021
       end_date: 2021-11-01
       highlights:
-        - Took a legacy monorepo (~100 components) from near-zero automation to standardized CI/CD (**Jenkins**) with built-in **CIS/DISA** checks and functional tests.
-        - Enforced 100% code flow through CI/CD and code review; raised automated test coverage to ~60% by authoring **Robot Framework** libraries and integration/E2E test patterns.
-        - Dockerized legacy apps and produced **Windows (EXE)** and **Linux (RPM)** installers to enable portable multi-component deployments for a ~50-engineer program.
-
+        - Took a legacy monorepo (~100 components) from near-zero automation to standardized CI/CD (Jenkins) that built and tested the full system. Created software to validate CIS/DISA controls and mission functional tests.
+        - Ensured 100% of code flowed through CI/CD and code review, raising automated test coverage from manual-only to ~60%. Authored Robot Framework libraries and test cases to speed integration and end-to-end test development.
+        - Dockerized legacy apps for portable, consistent deployments and produced Windows and Linux (RPM) installers for multi-component rollouts.
+        - Coordinated with ~50 engineers across multiple contractors on the program.
     - title: Cyber Threat Analyst / Software Engineer
       location: Colorado Springs, CO
       start: Jun 2015
@@ -54,9 +53,10 @@
       end: Oct 2019
       end_date: 2019-10-01
       highlights:
-        - Led on-site threat analyses validating contractor posture against **RMF** controls using manual techniques plus custom automation.
-        - Built and scaled a multi-user **NW.js/Vue.js/PouchDB** assessment app; cut assessment cycles from 4–6 weeks to 1–2 weeks with concurrent analyst workflows and evidence traceability.
-        - Created repeatable IaC environments (**Vagrant**) and migrated a Java codebase from **Ant to Gradle**, stabilizing builds and improving delivery.
+        - Led on-site threat analysis evaluations for Air Force systems using manual techniques and custom scripts to verify contractor-reported security posture against RMF controls.
+        - Built and scaled a multi-user NW.js/Vue.js/PouchDB assessment application that generated RMF artifacts (reports, charts, diagrams) and was used to train new assessors via an embedded help system. The application was designed to work in stand-alone, network, and peer-to-peer modes.
+        - Reduced assessment duration from 4-6 weeks to 1-2 weeks across data collection, review, and reporting, enabling concurrent analyst workflows with full traceability to evidence.
+        - Improved developer delivery by creating repeatable IaC-based environments (Vagrant) and migrating multiple Java codebases from Ant to Gradle.
 
 - company: Lockheed Martin (IS&GS / ISC2)
   location: Colorado Springs, CO
@@ -72,10 +72,10 @@
       end: Jan 2015
       end_date: 2015-01-01
       highlights:
-        - Led ~30 specialists across ~20 missions and 10+ contracts at ~6 sites, coordinating agile tasking and staffing for multi-site cyber operations.
-        - Delivered custom hardening and introduced a **GPO** management process that let developers work under strict lockdowns while maintaining compliance.
-        - Built an automated **STIG** evidence tool that improved validation and reporting efficiency by ~80%; managed **TCNO** vulnerability reporting during the **DIACAP to RMF** transition.
-
+        - Served as tech lead for a matrixed department scaling to ~30 specialists across ~20 missions, 10+ contracts, and ~6 sites.
+        - Matured custom hardening solutions across operating systems, networks, vendor/custom applications, databases, and virtualized environments.
+        - Presented regularly to government stakeholders and oversaw the TCNO applicability and enterprise vulnerability reporting process.
+        - Led the DIACAP to RMF transition, trained operations and security staff, and deployed and supported IDS/AV/SIEM capabilities in multiple environments.
     - title: Information Assurance Engineer
       location: Colorado Springs, CO
       start: May 2008
@@ -83,10 +83,10 @@
       end: Sep 2011
       end_date: 2011-09-01
       highlights:
-        - Managed recurring enclave evaluations across ~4 sites, delivering POA&Ms and leadership briefings while driving closure of all High/Medium findings each cycle.
-        - Re-engineered hotfix workflows to cut patch time by 50%+ and created layered configuration suites that lifted **DISA STIG** compliance without blocking mission software.
-        - Authored SOPs and training (**DokuWiki** plus slide decks) to standardize evidence capture and accelerate onboarding under **DIACAP**.
-
+        - Took a lead role in conducting recurring security evaluations for ~10 missions across 4 sites. Produced DIACAP POA&Ms and briefed both government and internal leadership regularly.
+        - Re-engineered hotfix workflows to cut patching time by 50%+ to meet accreditation deadlines and partnered with developers to balance mission availability with security requirements.
+        - Enhanced the hardening framework with configuration suites (using a layered approach) to raise DISA STIG compliance without blocking mission software. STIG compliance rates were between 90-100% each review cycle.
+        - Authored SOPs and other training materials to speed onboarding, reduce rework, and standardize evidence capture. Regularly led training sessions for team members and government staff.
     - title: Information Assurance Engineer Associate
       location: Colorado Springs, CO
       start: May 2007
@@ -94,6 +94,6 @@
       end: May 2008
       end_date: 2008-05-01
       highlights:
-        - Built a **PHP/MySQL** app (later **MSSQL**) that auto-generated **POA&Ms** and templated mitigations, cutting writing time by ~75% and reducing assessment effort to ~25% of baseline.
-        - Re-architected OS hardening into a definition-driven engine (**VBScript/Perl/shell**), eliminating duplicated scripts and speeding baseline creation across missions.
-        - Supported ~5 missions across 3 contracts and ~4 sites during the **DITSCAP to DIACAP** transition with a core team of 4 engineers.
+        - Built a PHP web app with MySQL (later MSSQL) to be used by the team to create POA&Ms, which replaced spreadsheet workflows in Excel and cut writing time by ~75%.
+        - Re-architected OS hardening from many bespoke scripts to a definition-driven lockdown engine (VBScript/Perl/shell), eliminating duplication and accelerating security baseline creation.
+        - Supported DITSCAP/DIACAP-based report creation for 5 missions across 3 contracts and 4 sites.
