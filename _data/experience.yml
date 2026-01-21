@@ -13,7 +13,7 @@
       end_date:
       highlights:
         - Drove org-wide adoption of SAST/SCA/Secret scanning from <10% to 100% in GitLab CI while cutting false positives by ~85% and overall noise by ~98% through reachability analysis, automated validation, and EPSS-weighted prioritization.
-        - Reduced SCA findings time-to-fix from 6+ months to ~1 week by maintaining and recommending Renovate for weekly CVE-driven dependency updates on hundreds of projects.
+        - Conducted reviews of AI powered applications, partipated in AI governance working groups, and developed best practices for secure use of generative AI in software development.
         - Mentored ~2k developers via weekly code jams, office hours, and design consults (authn, secret management, inter-service comms).
         - Assisted in company-wide engineering discussions as part of the principal organization, providing technical guidance and leadership.
     - title: Lead Application Security Engineer
